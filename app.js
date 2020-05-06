@@ -19,14 +19,12 @@ if('really'=== storyWords[i]){
   really = really + 1;
 }
 }
-
 for(let j=0; j < storyWords.length; j++){
   if('very'=== storyWords[j]){
   storyWords.splice(j);
   very = very + 1;
 }
 }
-
 for(let m=0; m< storyWords.length; m++){
   if('basically' === storyWords[m]){
   storyWords.splice(m);
@@ -34,21 +32,17 @@ for(let m=0; m< storyWords.length; m++){
 }
 }
 }
-
-
 let sentences = 0;
 storyWords.forEach(word => {
   if(word[word.length - 1] === '.' || word[word.length-1]){
     sentences = sentences +1 ;
   }
 })
-
 const logInfo = (story, overuse, sentences) => {
   console.log(story.length);
   console.log(overuse.length);
   console.log(sentences.length);
 };
-
 betterWords();
 console.log(storyWords);
 console.log('story' + story.length);
